@@ -23,7 +23,6 @@ steps:
       echo "Repository Type: $(Build.Repository.Provider)"
       echo "Repository URL: $(Build.Repository.Uri)"
       echo "Repository Branch: $(Build.SourceBranch)"
-      echo "Repository Branch: $(Build.DefaultBranch)"
     } else {
       echo "Self repository information not available."
     }
