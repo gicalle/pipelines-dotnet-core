@@ -17,7 +17,7 @@ steps:
 - pwsh: |
     echo "Logging Repository Information"
 
-    if ($(Build.Repository.Id) -ne '') {
+    if ("$(Build.Repository.Id)" -ne '') {
       echo "Repository Id: $(Build.Repository.Id)"
     }
 # #        echo "Repository Name: $(Build.Repository.Name)"
