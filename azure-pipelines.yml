@@ -12,7 +12,7 @@ pool:
   name: PiG Agents
 
 steps:
-- script: echo ${{ resources.repositories['self'].name }}
+#- script: echo ${{ resources.repositories['self'].name }}
 
 #- script: |
 #      echo "Logging Repository Information"
