@@ -16,8 +16,8 @@ steps:
 
 - script: |
     echo "Logging Repository Information"
-    
-#     # Log all properties of self repository
+
+    # Log all properties of self repository
 #     if ($(Build.Repository.Id) -ne '') {
 #       echo "Repository Id: $(Build.Repository.Id)"
 # #        echo "Repository Name: $(Build.Repository.Name)"
@@ -28,7 +28,7 @@ steps:
 #     } else {
 #       echo "Self repository information not available."
 #     }
-# displayName: 'Log Repository Info'
+  displayName: 'Log Repository Info'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
