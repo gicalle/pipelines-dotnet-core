@@ -14,21 +14,21 @@ pool:
 steps:
 #- script: echo ${{ resources.repositories['self'].name }}
 
-#- script: |
-#      echo "Logging Repository Information"
-#      
-#      # Log all properties of self repository
-#      if ($(Build.Repository.Id) -ne '') {
-#        echo "Repository Id: $(Build.Repository.Id)"
-#        echo "Repository Name: $(Build.Repository.Name)"
-#        echo "Repository Type: $(Build.Repository.Provider)"
-#        echo "Repository URL: $(Build.Repository.Uri)"
-#        echo "Repository Branch: $(Build.SourceBranch)"
-#        # Add more properties as needed
-#      } else {
-#        echo "Self repository information not available."
-#      }
-#  displayName: 'Log Repository Info'
+- script: |
+    echo "Logging Repository Information"
+    
+#     # Log all properties of self repository
+#     if ($(Build.Repository.Id) -ne '') {
+#       echo "Repository Id: $(Build.Repository.Id)"
+# #        echo "Repository Name: $(Build.Repository.Name)"
+# #        echo "Repository Type: $(Build.Repository.Provider)"
+# #        echo "Repository URL: $(Build.Repository.Uri)"
+# #        echo "Repository Branch: $(Build.SourceBranch)"
+# #        # Add more properties as needed
+#     } else {
+#       echo "Self repository information not available."
+#     }
+# displayName: 'Log Repository Info'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
