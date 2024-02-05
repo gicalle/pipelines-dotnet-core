@@ -14,7 +14,7 @@ pool:
 steps:
 #- script: echo ${{ resources.repositories['self'].name }}
 
-- script: |
+- pwsh: |
     echo "Logging Repository Information"
 
     if ($(Build.Repository.Id) -ne '') {
